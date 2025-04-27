@@ -36,6 +36,7 @@ public class Singleton<T> : MonoBehaviour where T : Component
     // for managing object between scenes.
     public virtual void Awake()
     {
+        /*
         if (instance != null)
         {
             if (instance == this)
@@ -45,8 +46,8 @@ public class Singleton<T> : MonoBehaviour where T : Component
             else
             {
                 Destroy(gameObject);
-            }
-        }
+            } 
+        } */
     }
 }
 

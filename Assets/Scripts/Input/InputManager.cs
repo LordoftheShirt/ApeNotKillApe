@@ -8,6 +8,8 @@ public class InputManager : Singleton<InputManager>
 {
     private RTSInput input;
 
+    public delegate void LeftClickEvent(Vector3 position);
+    public event LeftClickEvent onClick;
     //public delegate void f;
 
     public override void Awake()
@@ -70,10 +72,10 @@ public class InputManager : Singleton<InputManager>
 
     }
 
-    public Vector2 InteractStart(InputAction.CallbackContext context)
+    public void InteractStart(InputAction.CallbackContext context)
     {
         print(PointerWorldPosition());
-        return PointerWorldPosition();
+        if (onClick != null) onClick(PointerWorldPosition());
     }
 
     public void InteractEnd(InputAction.CallbackContext context)
@@ -91,8 +93,10 @@ public class InputManager : Singleton<InputManager>
 
     }
 
-    private Vector3 PointerWorldPosition()
+    public Vector3 PointerWorldPosition()
     {
-        return Camera.main.ScreenToWorldPoint(new Vector3(input.RTS.Pointer.ReadValue<Vector2>().x, input.RTS.Pointer.ReadValue<Vector2>().y, 0));
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(new Vector3(input.RTS.Pointer.ReadValue<Vector2>().x, input.RTS.Pointer.ReadValue<Vector2>().y, 0));
+        worldPosition.z = 0;
+        return worldPosition;
     }
 }
