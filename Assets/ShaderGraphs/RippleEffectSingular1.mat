@@ -37,9 +37,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Magnification: -0.05
-    - _Size: 0.1
-    - _VisualVineBoom: 0.154
+    - _Magnification: -0.3
+    - _Size: 0.2
+    - _VisualVineBoom: 0.218
     - _WaveDistanceFromCenter: 0.19
     m_Colors:
     - _FocalPoint: {r: 0.5, g: 0.5, b: 0, a: 0}
