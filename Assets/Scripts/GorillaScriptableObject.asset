@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6ca74874dbd3b44a3e1c3645639872, type: 3}
+  m_Name: GorillaScriptableObject
+  m_EditorClassIdentifier: 
+  neutralSprite: {fileID: -7087116126050485063, guid: 2d9240dcde1f9554c806b83006e8662a, type: 3}
+  sereneSprite: {fileID: -7572270743184894992, guid: 6e45ddf6e34fc314a92a7e00e9f3405f, type: 3}
+  sadSprite: {fileID: -5394499674622289020, guid: 0b41a783268ecf644886efbe8576d918, type: 3}
+  mouthfulSprite: {fileID: -5466567926564268621, guid: c37fbf0ba14ea0f4c8473193264f8cbe, type: 3}
+  distressedSprite: {fileID: -2496400276265893574, guid: 2941168fc5b57ef439f3879b7417e63d, type: 3}
+  ragefulSprite: {fileID: 1687416963417154580, guid: 92fbcd25bd9ed9f4a92f05f63ff09318, type: 3}
+  restingSprite: {fileID: -6450915353870679519, guid: 339cbdd15db4593499ec852020495a57, type: 3}
+  dyingSprite: {fileID: 4599110234113990185, guid: 5f55f864001ec484d88d7916671d400c, type: 3}
+  deadSprite: {fileID: 5507888248119185536, guid: 7967b4aee43718440af8728842a176c7, type: 3}
+  distortions:
+  - {fileID: 2100000, guid: de70602a175a78b479c0f085a0028312, type: 2}
+  - {fileID: 2100000, guid: 5346eafc18ee8e44eba638d1ec4d5911, type: 2}
+  - {fileID: 2100000, guid: aede3624e6f140743b6c911c1fc0de6b, type: 2}
+  - {fileID: 2100000, guid: 9aa944ea6d5860a40ad1bf7a25ce6558, type: 2}
+  - {fileID: 2100000, guid: d566bef4183a0c742a3642147886806c, type: 2}
+  - {fileID: 2100000, guid: a71a0fcc10b6c954fb550ea8d940d4bc, type: 2}
+  - {fileID: 2100000, guid: fcff7affbbb451b45aba71236ceaf85c, type: 2}
+  - {fileID: 2100000, guid: 146656fe04cf75948bb61774bbd3bc42, type: 2}
+  - {fileID: 2100000, guid: 865aa861a72d5bf4681dc221d9962cf4, type: 2}
+  - {fileID: 2100000, guid: 977c8e14431c3314581c324047273ed5, type: 2}
