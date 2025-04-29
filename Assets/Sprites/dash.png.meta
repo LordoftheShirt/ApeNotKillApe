@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7967b4aee43718440af8728842a176c7
+guid: 9eb6e024998faa04d85b74e140185f9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5507888248119185536
-    second: Dead_Gorilla_0
+      213: 7110878671101974141
+    second: dash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,21 +37,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_Gorilla_0
+      name: dash_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 68
+        y: 33
+        width: 383
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08051bbfd23ff6c40800000000000000
-      internalID: 5507888248119185536
+      spriteID: d765fefe97aeea260800000000000000
+      internalID: 7110878671101974141
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08970aa37fe5d2e48a68ecdb3135683c
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dead_Gorilla_0: 5507888248119185536
+      dash_0: 7110878671101974141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

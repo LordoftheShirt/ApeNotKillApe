@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7967b4aee43718440af8728842a176c7
+guid: 40de03a4f82450644a4f51e546634bc1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5507888248119185536
-    second: Dead_Gorilla_0
+      213: 1768128469875094793
+    second: dashedbox_0
+  - first:
+      213: 3087796048303251110
+    second: dashedbox_1
+  - first:
+      213: -1818564904910439707
+    second: dashedbox_2
+  - first:
+      213: 1782183469355031752
+    second: dashedbox_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,19 +49,19 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  alignment: 6
+  spritePivot: {x: 1, y: 1}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 3, y: 3, z: 3, w: 3}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_Gorilla_0
+      name: dashedbox_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 512
-        height: 512
+        y: 48
+        width: 24
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08051bbfd23ff6c40800000000000000
-      internalID: 5507888248119185536
+      spriteID: 905f824b977a98810800000000000000
+      internalID: 1768128469875094793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dashedbox_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 43
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae58f5652e0ada20800000000000000
+      internalID: 3087796048303251110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dashedbox_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea32d9aad823c6e0800000000000000
+      internalID: -1818564904910439707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dashedbox_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccda774c669bb810800000000000000
+      internalID: 1782183469355031752
       vertices: []
       indices: 
       edges: []
@@ -125,8 +200,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08970aa37fe5d2e48a68ecdb3135683c
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dead_Gorilla_0: 5507888248119185536
+      dashedbox_0: 1768128469875094793
+      dashedbox_1: 3087796048303251110
+      dashedbox_2: -1818564904910439707
+      dashedbox_3: 1782183469355031752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

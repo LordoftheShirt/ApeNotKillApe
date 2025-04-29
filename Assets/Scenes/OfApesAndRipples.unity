@@ -1353,7 +1353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1872501045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,9 +1368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ComponentVersion: 2
   m_LightType: 3
-  m_BlendStyleIndex: 1
+  m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0, b: 0.15523481, a: 1}
+  m_Color: {r: 0.69803923, g: 0, b: 0.05093087, a: 1}
   m_Intensity: 40.4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.63
+  m_PointLightOuterRadius: 9.7
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -1532,7 +1532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5829575732612541895, guid: b261e556a0688e542904fa07e2e5c5fc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1549,15 +1549,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.6949537
       objectReference: {fileID: 0}
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.9150943
       objectReference: {fileID: 0}
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.7035433
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_SortingLayer
@@ -1565,6 +1569,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
+      propertyPath: m_MaskInteraction
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3540016291833793860, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}

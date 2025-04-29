@@ -42,20 +42,20 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _Magnification: 0.15
-    - _PulseAmount: 0.02
+    - _Magnification: 0.29
+    - _PulseAmount: -0.03
     - _Size: 0.3
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
-    - _Thickness: 0.92
+    - _Thickness: -0.05
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _WaveDistanceFromCenter: 0.24
-    - _XDistortion: 0.454
-    - _YDistortion: 0.55
+    - _XDistortion: 0.51
+    - _YDistortion: 0.35
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _FocalPoint: {r: 0.44, g: 0.5, b: 0, a: 0}
