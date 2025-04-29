@@ -15,8 +15,6 @@ public class GorillaContext
         MyMaterial = MyObject.GetComponent<SpriteRenderer>().material;
         MyStateMachine = stateMachine;
         MyGorillaScriptableObject = scriptableObject;
-
-        Debug.Log(MyMaterial);
     }
 
     // Read-Only properties. " => " means they only can only be get, cannot be set?

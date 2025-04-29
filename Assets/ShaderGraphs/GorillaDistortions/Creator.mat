@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Original
+  m_Name: Creator
   m_Shader: {fileID: -6465566751694194690, guid: 6b1f44eeaca1b0d42bad37e789029fee, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,15 +55,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _HighlightWhitener: 0
-    - _Magnification: 0.119
-    - _MorphDistanceFromCenter: -1.36
-    - _MorphSize: 10
-    - _OutlinePulseAmount: -0.06
-    - _OutlinePulseSpeed: 5.09
-    - _OutlinePulseThickness: -0.1
+    - _Magnification: -0.1
+    - _MorphDistanceFromCenter: -0.1
+    - _MorphSize: 0
+    - _OutlinePulseAmount: 0.02
+    - _OutlinePulseSpeed: 5
+    - _OutlinePulseThickness: 0
     - _PulseTime: 0
-    - _XDistortion: 0.4766
-    - _YDistortion: 0.35
+    - _XDistortion: 0.5
+    - _YDistortion: 0.5
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

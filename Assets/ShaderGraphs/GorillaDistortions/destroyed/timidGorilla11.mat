@@ -25,14 +25,14 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Magnification: 0.2
+    - _Magnification: -0.044
     - _MorphSize: 0.486
     - _OutlinePulseAmount: 0.02
     - _OutlinePulseSpeed: 5
     - _OutlinePulseThickness: -0.2226
     - _WaveDistanceFromCenter: 0.23
-    - _XDistortion: 0.4213
-    - _YDistortion: 0.4428
+    - _XDistortion: 0.4644
+    - _YDistortion: 0.4044
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

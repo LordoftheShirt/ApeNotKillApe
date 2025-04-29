@@ -56,9 +56,9 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _HighlightWhitener: 0
-    - _Magnification: 0.33
-    - _MorphDistanceFromCenter: -0.1
-    - _MorphSize: 0.028
+    - _Magnification: -0.1
+    - _MorphDistanceFromCenter: 0.25
+    - _MorphSize: 0
     - _OutlinePulseAmount: 0.02
     - _OutlinePulseSpeed: 0
     - _OutlinePulseThickness: -0.1
@@ -75,8 +75,8 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _WaveDistanceFromCenter: 0.29
-    - _XDistortion: 0.545
-    - _YDistortion: 0.475
+    - _XDistortion: 0.4266
+    - _YDistortion: 0.35
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _FocalPoint: {r: 0.44, g: 0.5, b: 0, a: 0}

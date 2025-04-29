@@ -3610,10 +3610,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -666.9999389648438,
-            "y": -466.00006103515627,
-            "width": 96.99993896484375,
-            "height": 34.000030517578128
+            "x": -668.0,
+            "y": -465.99993896484377,
+            "width": 131.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -4644,7 +4644,7 @@
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 2.0
+        "y": 10.0
     }
 }
 
@@ -4730,13 +4730,13 @@
     "m_RefNameGeneratedByDisplayName": "MorphDistanceFromCenter",
     "m_DefaultReferenceName": "_MorphDistanceFromCenter",
     "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
+    "m_GeneratePropertyBlock": false,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_DismissedVersion": 0,
     "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
+    "overrideHLSLDeclaration": true,
+    "hlslDeclarationOverride": 2,
     "m_Hidden": false,
     "m_Value": -0.10000000149011612,
     "m_FloatType": 0,
@@ -5979,8 +5979,8 @@
     "m_ObjectId": "e1d0bbac72cf499497d3f7e83a4931a2",
     "m_Title": "Distortion",
     "m_Position": {
-        "x": -1203.0,
-        "y": -724.0
+        "x": -1202.9998779296875,
+        "y": -723.9999389648438
     }
 }
 
@@ -6837,8 +6837,8 @@
     "m_ObjectId": "fe2b7c590c644d8cb31ca48d11362201",
     "m_Title": "Time",
     "m_Position": {
-        "x": -2236.0,
-        "y": -692.0
+        "x": -2235.999755859375,
+        "y": -691.9999389648438
     }
 }
 
