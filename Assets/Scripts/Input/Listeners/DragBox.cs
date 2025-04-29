@@ -1,8 +1,10 @@
 using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 
 public class DragBox : MonoBehaviour
 {
+
     [SerializeField, Range(0, 1f)] private float colliderSizeDownScale = 1f;
     [SerializeField] private GameObject dashedBox;
 
@@ -12,21 +14,15 @@ public class DragBox : MonoBehaviour
     private Coroutine coroutine;
 
     private bool selectActionPerformed = false;
-    void Start()
+    void Awake()
     {
+        
         spriteRenderer = dashedBox.GetComponent<SpriteRenderer>();
         boxCollider = dashedBox.GetComponent<BoxCollider2D>();
 
         InputManager.Instance.onLeftClick += DashedBoxToLeftClick;
         InputManager.Instance.onLeftClickRelease += SelectCompleted;
     }
-
-    
-    void Update()
-    {
-        
-    }
-
 
     private void DashedBoxToLeftClick(Vector3 position)
     {

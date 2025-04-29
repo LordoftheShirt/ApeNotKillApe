@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public abstract class GorillaState : BaseState<GorillaStateMachine.EGorillaState>
@@ -8,6 +9,4 @@ public abstract class GorillaState : BaseState<GorillaStateMachine.EGorillaState
     {
         Context = context;
     }
-
-
 }

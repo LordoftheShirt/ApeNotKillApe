@@ -42,7 +42,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
+    - _HighlightWhitener: 0
     - _Magnification: 0.56
+    - _MorphDistanceFromCenter: -0.1
+    - _MorphSize: 0.271
+    - _OutlinePulseAmount: 0.02
+    - _OutlinePulseSpeed: 5
+    - _OutlinePulseThickness: -0.1
+    - _PulseTime: 0
     - _Size: 0.18
     - _Speed: 1.33
     - _Stencil: 0
@@ -60,3 +67,16 @@ Material:
     - _FocalPoint: {r: 0.44, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
+--- !u!114 &2104516992840837559
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9

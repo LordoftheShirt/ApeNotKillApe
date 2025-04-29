@@ -77,7 +77,7 @@ public class InputManager : Singleton<InputManager>
 
     public void InteractStart(InputAction.CallbackContext context)
     {
-        print(PointerWorldPosition());
+        //print(PointerWorldPosition());
         if (onLeftClick != null) onLeftClick(PointerWorldPosition());
     }
 

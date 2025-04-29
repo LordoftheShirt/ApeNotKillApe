@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using static GorillaStateMachine;
 
@@ -9,11 +10,12 @@ using static GorillaStateMachine;
 
 //
 
-public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaState>
+public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaState>, ISelectable
 {
     public enum EGorillaState {
         NeutralGorilla,
-        SereneGorilla,
+        DestinedGorilla
+        /*SereneGorilla,
         SadGorilla,
 
         MouthfulGorilla,
@@ -22,17 +24,20 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
 
         RestingGorilla,
         DyingGorilla,
-        DeadGorilla,
+        DeadGorilla,*/
     }
 
+    // sends these to context.
+    [SerializeField] private GorillaScriptableObject gorillaScriptableObject;
     private GorillaContext gorillaContext;
-
     private GameObject me;
+
+    private bool outlinePulse;
 
     void Awake()
     {
         me = gameObject;
-        gorillaContext = new GorillaContext(me);
+        gorillaContext = new GorillaContext(me, this, gorillaScriptableObject);
         InitializeState();
     }
 
@@ -42,5 +47,44 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
         States.Add(EGorillaState.NeutralGorilla, new NeutralGorillaState(gorillaContext, EGorillaState.NeutralGorilla));
 
         CurrentState = States[EGorillaState.NeutralGorilla];
+    }
+
+    
+    //------------------------------------------------
+    // From the ISelectable interface:
+    public void OnHighlight(bool isOn)
+    {
+        if (isOn)
+        {
+            gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderHighlightWhitener, 0.1f);
+        }
+        else
+        {
+            gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderHighlightWhitener, 0f);
+        }
+    }
+
+    public void OnSelect(bool isOn)
+    {
+        if (isOn)
+        {
+            outlinePulse = true;
+            StartCoroutine(OutlinePulse());
+        }
+        else
+        {
+            outlinePulse = false;
+        }
+    }
+    //--------------------------------------------
+    private IEnumerator OutlinePulse()
+    {
+        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseThickness, -0.1f);
+        while (outlinePulse)
+        {
+            gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderPulseTime, Time.timeSinceLevelLoad);
+            yield return null;
+        }
+        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseThickness, 0);
     }
 }
