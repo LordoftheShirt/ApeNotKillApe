@@ -22,13 +22,33 @@ MonoBehaviour:
   dyingSprite: {fileID: 4599110234113990185, guid: 5f55f864001ec484d88d7916671d400c, type: 3}
   deadSprite: {fileID: 5507888248119185536, guid: 7967b4aee43718440af8728842a176c7, type: 3}
   distortions:
-  - {fileID: 2100000, guid: de70602a175a78b479c0f085a0028312, type: 2}
-  - {fileID: 2100000, guid: 5346eafc18ee8e44eba638d1ec4d5911, type: 2}
-  - {fileID: 2100000, guid: aede3624e6f140743b6c911c1fc0de6b, type: 2}
-  - {fileID: 2100000, guid: 9aa944ea6d5860a40ad1bf7a25ce6558, type: 2}
-  - {fileID: 2100000, guid: d566bef4183a0c742a3642147886806c, type: 2}
-  - {fileID: 2100000, guid: a71a0fcc10b6c954fb550ea8d940d4bc, type: 2}
-  - {fileID: 2100000, guid: fcff7affbbb451b45aba71236ceaf85c, type: 2}
-  - {fileID: 2100000, guid: 146656fe04cf75948bb61774bbd3bc42, type: 2}
-  - {fileID: 2100000, guid: 865aa861a72d5bf4681dc221d9962cf4, type: 2}
-  - {fileID: 2100000, guid: 977c8e14431c3314581c324047273ed5, type: 2}
+  - {fileID: 2100000, guid: 5c22a09dd45fe2b4ca9fa6081b3f8ed8, type: 2}
+  - {fileID: 2100000, guid: 8b8bd5387d365fb45b50de49f3a04cf1, type: 2}
+  - {fileID: 2100000, guid: 1aaec8501d5132d4cbd7bffbb8949790, type: 2}
+  - {fileID: 2100000, guid: 1c9e048ce4d3e0d418dade0858ce7bc0, type: 2}
+  - {fileID: 2100000, guid: ef0cdc03d1a212643a18b47a9c251360, type: 2}
+  - {fileID: 2100000, guid: 1abac98c7afb1ad469a15efb2cb47837, type: 2}
+  - {fileID: 2100000, guid: f32b12b8482fcd441b4e045e45f7d15d, type: 2}
+  - {fileID: 2100000, guid: 0d3982db5c41a014684e48945af031fe, type: 2}
+  - {fileID: 2100000, guid: 5cc4d20f54551d94e9389172428e9205, type: 2}
+  - {fileID: 2100000, guid: dc3dcac1832438c4e979cd9828a52480, type: 2}
+  - {fileID: 2100000, guid: 40f9b1d64e8dcb3458b87624f9c1d398, type: 2}
+  - {fileID: 2100000, guid: 7b53d5f5c3826d249942ddb3fcb52470, type: 2}
+  - {fileID: 2100000, guid: 324b75f9c6bf93842af905a4a247b5ca, type: 2}
+  - {fileID: 2100000, guid: 59c2cdf3fe2bbb64f971dac2be6e9e64, type: 2}
+  - {fileID: 2100000, guid: bfcc87b77c1cdd5498d3203d64e5ca46, type: 2}
+  - {fileID: 2100000, guid: a4321c65784c1554ba81afef3897d190, type: 2}
+  - {fileID: 2100000, guid: 47d474497c74b924cbf07835b241194c, type: 2}
+  - {fileID: 2100000, guid: ac03138adf6ba35449bfcff6a8399178, type: 2}
+  - {fileID: 2100000, guid: 5b714c7a3fdcc6d43a21daff9a345828, type: 2}
+  - {fileID: 2100000, guid: 006d18b3f13055849a160798780adc20, type: 2}
+  ShaderSize: 750
+  ShaderMagnification: 751
+  ShaderWaveDistanceFromCenter: 754
+  ShaderXDistortion: 757
+  ShaderYDistortion: 758
+  ShaderOutlinePulseAmount: 759
+  ShaderOutlinePulseThickness: 760
+  ShaderOutlinePulseSpeed: 761
+  ShaderHighlightWhitener: 762
+  ShaderPulseTime: 763

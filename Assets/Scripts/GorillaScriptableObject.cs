@@ -21,9 +21,9 @@ public class GorillaScriptableObject : ScriptableObject
     [SerializeField] public Material[] distortions;
 
     // distortion variables.
-    public int ShaderSize = Shader.PropertyToID("_MorphSize");
+    public int ShaderSize = Shader.PropertyToID("_Size");
     public int ShaderMagnification = Shader.PropertyToID("_Magnification");
-    public int ShaderMorphDistanceFromCenter = Shader.PropertyToID("_MorphDistanceFromCenter");
+    public int ShaderWaveDistanceFromCenter = Shader.PropertyToID("_WaveDistanceFromCenter");
     public int ShaderXDistortion = Shader.PropertyToID("_XDistortion");
     public int ShaderYDistortion = Shader.PropertyToID("_YDistortion");
 
