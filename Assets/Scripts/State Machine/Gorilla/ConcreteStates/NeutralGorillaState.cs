@@ -4,6 +4,7 @@ using UnityEngine;
 // Family Tree: NeutralGorillaState -> GorillaState -> BaseState<GorillaStateMachine>. GorillaStateMachine<EGorillaState> -> StateMachine *uses EGorillaState Enums* -> Monobehavior
 public class NeutralGorillaState : GorillaState
 {
+    private float trackTime = 0;
     public NeutralGorillaState(GorillaContext context, GorillaStateMachine.EGorillaState estate) : base (context, estate)
     {
         Context = context;
@@ -16,9 +17,8 @@ public class NeutralGorillaState : GorillaState
     public override void ExitState() { }
     public override void UpdateState() 
     {
-        // have got to create a singleton input class:
-        //if (InputManager.Instance.Scrolling)
-        //Context.MyObject.transform.position += new Vector3 (0, 0.1f);
+        trackTime += Time.deltaTime;
+        Context.MyObject.transform.position += new Vector3(0, Mathf.Sin(trackTime) * 0.001f);
     }
     public override GorillaStateMachine.EGorillaState GetNextState() 
     {

@@ -27,24 +27,12 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
 
     private GorillaContext gorillaContext;
 
-    [SerializeField] private Sprite neutralSprite;
-    [SerializeField] private Sprite sereneSprite;
-    [SerializeField] private Sprite sadSprite;
-
-    [SerializeField] private Sprite mouthfulSprite;
-    [SerializeField] private Sprite distressedSprite;
-    [SerializeField] private Sprite ragefulSprite;
-
-    [SerializeField] private Sprite restingSprite;
-    [SerializeField] private Sprite dyingSprite;
-    [SerializeField] private Sprite deadSprite;
-
     private GameObject me;
 
     void Awake()
     {
         me = gameObject;
-        gorillaContext = new GorillaContext(neutralSprite, sereneSprite, sadSprite, mouthfulSprite, distressedSprite, ragefulSprite, restingSprite, dyingSprite, deadSprite, me);
+        gorillaContext = new GorillaContext(me);
         InitializeState();
     }
 

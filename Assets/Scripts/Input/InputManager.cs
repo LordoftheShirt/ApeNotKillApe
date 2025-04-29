@@ -9,7 +9,10 @@ public class InputManager : Singleton<InputManager>
     private RTSInput input;
 
     public delegate void LeftClickEvent(Vector3 position);
-    public event LeftClickEvent onClick;
+    public event LeftClickEvent onLeftClick;
+
+    public delegate void LeftClickRelease();
+    public event LeftClickRelease onLeftClickRelease;
     //public delegate void f;
 
     public override void Awake()
@@ -75,12 +78,14 @@ public class InputManager : Singleton<InputManager>
     public void InteractStart(InputAction.CallbackContext context)
     {
         print(PointerWorldPosition());
-        if (onClick != null) onClick(PointerWorldPosition());
+        if (onLeftClick != null) onLeftClick(PointerWorldPosition());
     }
 
     public void InteractEnd(InputAction.CallbackContext context)
     {
         // left click
+        if (onLeftClickRelease != null) onLeftClickRelease();
+
     }
 
     public void RightClickStart(InputAction.CallbackContext context)

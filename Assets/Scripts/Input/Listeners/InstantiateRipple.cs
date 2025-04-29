@@ -11,7 +11,7 @@ public class InstantiateRipple : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.Instance.onClick += SpawnRipple;
+        InputManager.Instance.onLeftClick += SpawnRipple;
     }
     // Update is called once per frame
     void Update()
