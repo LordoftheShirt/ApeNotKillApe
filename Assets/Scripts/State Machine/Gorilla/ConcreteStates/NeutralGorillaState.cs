@@ -24,11 +24,20 @@ public class NeutralGorillaState : GorillaState
     }
     public override void OnTriggerEnter2D(Collider2D collision) 
     {
-        Context.MyStateMachine.OnHighlight(true);
+        // Have the collision occur in a script on the dashedBox object instead, monitoring whether right click or releaseLeftClick. If release left click, add the TriggerExited to a local list... maybe
+        if (collision.CompareTag("SelectTool"))
+        {
+            Context.MyStateMachine.OnHighlight(true);
+        }
     }
     public override void OnTriggerStay2D(Collider2D collision) { }
     public override void OnTriggerExit2D(Collider2D collision) 
     {
-        Context.MyStateMachine.OnHighlight(false);
+        if (collision.CompareTag("SelectTool"))
+        {
+            Context.MyStateMachine.OnHighlight(false);
+
+        }
+        
     }
 }

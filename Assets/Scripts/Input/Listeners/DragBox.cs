@@ -1,5 +1,5 @@
 using System.Collections;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DragBox : MonoBehaviour
@@ -13,15 +13,17 @@ public class DragBox : MonoBehaviour
 
     private Coroutine coroutine;
 
-    private bool selectActionPerformed = false;
+    private bool EndSelect = false;
     void Awake()
     {
-        
+        List<GameObject> selectedObjects = new List<GameObject>();
         spriteRenderer = dashedBox.GetComponent<SpriteRenderer>();
         boxCollider = dashedBox.GetComponent<BoxCollider2D>();
 
-        InputManager.Instance.onLeftClick += DashedBoxToLeftClick;
-        InputManager.Instance.onLeftClickRelease += SelectCompleted;
+        InputManager.Instance.OnRightClick += SelectActionCanceled;
+        InputManager.Instance.OnLeftClick += DashedBoxToLeftClick;
+        InputManager.Instance.OnLeftClickRelease += SelectCompleted;
+        //InputManager.Instance.O
     }
 
     private void DashedBoxToLeftClick(Vector3 position)
@@ -37,7 +39,7 @@ public class DragBox : MonoBehaviour
     {
         Vector3 followPointer;
 
-        while (!selectActionPerformed)
+        while (!EndSelect)
         {
             followPointer = InputManager.Instance.PointerWorldPosition();
             spriteRenderer.size = (followPointer - dashedBox.transform.position) / 2;
@@ -51,14 +53,20 @@ public class DragBox : MonoBehaviour
             yield return null;
         }
         
-        // reset
-        selectActionPerformed = false;
+        // reset.
+        EndSelect = false;
         dashedBox.SetActive(false);
     }
 
     private void SelectCompleted()
     {
-        print("mouse release!");
-        selectActionPerformed = true;
+        // left click release
+        EndSelect = true;
+    }
+
+    private void SelectActionCanceled(Vector3 position)
+    {
+        // right click. Doesn't actually use the vector at all lol.
+        EndSelect = true;
     }
 }

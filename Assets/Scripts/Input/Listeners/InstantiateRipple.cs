@@ -6,7 +6,7 @@ public class InstantiateRipple : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.Instance.onLeftClick += SpawnRipple;
+        InputManager.Instance.OnLeftClick += SpawnRipple;
     }
 
     void SpawnRipple(Vector3 position)

@@ -9,11 +9,16 @@ public class InputManager : Singleton<InputManager>
     private RTSInput input;
 
     public delegate void LeftClickEvent(Vector3 position);
-    public event LeftClickEvent onLeftClick;
+    public event LeftClickEvent OnLeftClick;
 
     public delegate void LeftClickRelease();
-    public event LeftClickRelease onLeftClickRelease;
-    //public delegate void f;
+    public event LeftClickRelease OnLeftClickRelease;
+    
+    public delegate void RightClickEvent(Vector3 position);
+    public event RightClickEvent OnRightClick;
+
+    public delegate void RightClickRelease();
+    public event RightClickRelease OnRightClickRelease;
 
     public override void Awake()
     {
@@ -78,24 +83,24 @@ public class InputManager : Singleton<InputManager>
     public void InteractStart(InputAction.CallbackContext context)
     {
         //print(PointerWorldPosition());
-        if (onLeftClick != null) onLeftClick(PointerWorldPosition());
+        if (OnLeftClick != null) OnLeftClick(PointerWorldPosition());
     }
 
     public void InteractEnd(InputAction.CallbackContext context)
     {
         // left click
-        if (onLeftClickRelease != null) onLeftClickRelease();
+        if (OnLeftClickRelease != null) OnLeftClickRelease();
 
     }
 
     public void RightClickStart(InputAction.CallbackContext context)
     {
-        
+        if (OnRightClick != null) OnRightClick(PointerWorldPosition());
     }
 
     public void RightClickEnd(InputAction.CallbackContext context)
     {
-
+        if (OnRightClickRelease != null) OnRightClickRelease();
     }
 
     public Vector3 PointerWorldPosition()
