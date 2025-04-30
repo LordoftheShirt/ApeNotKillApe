@@ -56,6 +56,7 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
     {
         if (isOn)
         {
+            print("highlighted");
             gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderHighlightWhitener, 0.1f);
         }
         else
@@ -68,6 +69,7 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
     {
         if (isOn)
         {
+            print("selected");
             outlinePulse = true;
             StartCoroutine(OutlinePulse());
         }

@@ -21,6 +21,7 @@ public class GorillaScriptableObject : ScriptableObject
     [SerializeField] public Material[] distortions;
 
     // distortion variables.
+    
     public int ShaderSize = Shader.PropertyToID("_Size");
     public int ShaderMagnification = Shader.PropertyToID("_Magnification");
     public int ShaderWaveDistanceFromCenter = Shader.PropertyToID("_WaveDistanceFromCenter");
@@ -32,6 +33,6 @@ public class GorillaScriptableObject : ScriptableObject
     public int ShaderOutlinePulseThickness = Shader.PropertyToID("_OutlinePulseThickness");
     public int ShaderOutlinePulseSpeed = Shader.PropertyToID("_OutlinePulseSpeed");
     public int ShaderHighlightWhitener = Shader.PropertyToID("_HighlightWhitener");
-    public int ShaderPulseTime = Shader.PropertyToID("_PulseTime");
+    public int ShaderPulseTime = Shader.PropertyToID("_PulseTime"); 
 
 }

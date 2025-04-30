@@ -13,17 +13,17 @@ public class DragBox : MonoBehaviour
 
     private Coroutine coroutine;
 
-    private bool EndSelect = false;
+    private bool selectCompleted = false;
+    private bool selectCancelled = false;
+
+    private int clickInput;
     void Awake()
     {
         List<GameObject> selectedObjects = new List<GameObject>();
         spriteRenderer = dashedBox.GetComponent<SpriteRenderer>();
         boxCollider = dashedBox.GetComponent<BoxCollider2D>();
 
-        InputManager.Instance.OnRightClick += SelectActionCanceled;
         InputManager.Instance.OnLeftClick += DashedBoxToLeftClick;
-        InputManager.Instance.OnLeftClickRelease += SelectCompleted;
-        //InputManager.Instance.O
     }
 
     private void DashedBoxToLeftClick(Vector3 position)
@@ -37,10 +37,24 @@ public class DragBox : MonoBehaviour
 
     private IEnumerator BoxStretchToPointer()
     {
+        float leftClick = InputManager.Instance.DetectLeftClickChange();
+        float rightClick = InputManager.Instance.DetectRightClickChange();
         Vector3 followPointer;
 
-        while (!EndSelect)
+        while (true) 
         {
+            if (leftClick != InputManager.Instance.DetectLeftClickChange())
+            {
+                print("left click change!");
+                break;
+            }
+
+            if (rightClick != InputManager.Instance.DetectRightClickChange())
+            {
+                print("right click change!");
+                break; 
+            }
+
             followPointer = InputManager.Instance.PointerWorldPosition();
             spriteRenderer.size = (followPointer - dashedBox.transform.position) / 2;
 
@@ -54,19 +68,6 @@ public class DragBox : MonoBehaviour
         }
         
         // reset.
-        EndSelect = false;
         dashedBox.SetActive(false);
-    }
-
-    private void SelectCompleted()
-    {
-        // left click release
-        EndSelect = true;
-    }
-
-    private void SelectActionCanceled(Vector3 position)
-    {
-        // right click. Doesn't actually use the vector at all lol.
-        EndSelect = true;
     }
 }

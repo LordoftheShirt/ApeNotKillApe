@@ -109,4 +109,14 @@ public class InputManager : Singleton<InputManager>
         worldPosition.z = 0;
         return worldPosition;
     }
+
+    public float DetectLeftClickChange()
+    {
+        return input.RTS.LeftClick.ReadValue<float>();
+    }
+
+    public float DetectRightClickChange()
+    {
+        return input.RTS.RightClick.ReadValue<float>();
+    }
 }
