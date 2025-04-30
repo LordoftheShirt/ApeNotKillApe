@@ -45,7 +45,7 @@ Material:
     - _Magnification: -0.23
     - _OutlinePulseAmount: 0.02
     - _OutlinePulseSpeed: 5
-    - _OutlinePulseThickness: -0.1
+    - _OutlinePulseThickness: 0
     - _PulseTime: 0
     - _Size: 0.2
     - _WaveDistanceFromCenter: 0.13

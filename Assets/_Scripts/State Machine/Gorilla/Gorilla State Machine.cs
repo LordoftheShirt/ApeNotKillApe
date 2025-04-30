@@ -29,6 +29,8 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
 
     // sends these to context.
     [SerializeField] private GorillaScriptableObject gorillaScriptableObject;
+    [SerializeField] private float pulseAmount = 0.02f;
+    [SerializeField] private float pulseThickness = -0.1f;
     private GorillaContext gorillaContext;
     private GameObject me;
 
@@ -56,7 +58,6 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
     {
         if (isOn)
         {
-            print("highlighted");
             gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderHighlightWhitener, 0.1f);
         }
         else
@@ -69,7 +70,6 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
     {
         if (isOn)
         {
-            print("selected");
             outlinePulse = true;
             StartCoroutine(OutlinePulse());
         }
@@ -81,12 +81,16 @@ public class GorillaStateMachine : StateManager<GorillaStateMachine.EGorillaStat
     //--------------------------------------------
     private IEnumerator OutlinePulse()
     {
-        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseThickness, -0.1f);
+        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseThickness, pulseThickness);
+        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseAmount, pulseAmount);
+
         while (outlinePulse)
         {
             gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderPulseTime, Time.timeSinceLevelLoad);
             yield return null;
         }
+
         gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseThickness, 0);
+        gorillaContext.MyMaterial.SetFloat(gorillaContext.MyGorillaScriptableObject.ShaderOutlinePulseAmount, 0);
     }
 }

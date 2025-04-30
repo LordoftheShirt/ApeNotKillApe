@@ -42,6 +42,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Magnification: -5
+    - _PulseMagnification: -0.1
+    - _PulseSize: 2
+    - _PulseSpeed: 0.1
     - _Size: 2
     - _Speed: 0.1
     - _VisualVineBoom: 0.5

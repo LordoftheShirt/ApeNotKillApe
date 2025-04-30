@@ -1543,10 +1543,10 @@
     "m_Guid": {
         "m_GuidSerialized": "3075e2eb-67c2-476a-ab34-4dd9de74a110"
     },
-    "m_Name": "Magnification",
+    "m_Name": "PulseMagnification",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Magnification",
-    "m_DefaultReferenceName": "_Magnification",
+    "m_RefNameGeneratedByDisplayName": "PulseMagnification",
+    "m_DefaultReferenceName": "_PulseMagnification",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1940,7 +1940,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "5ef8a9ee60384064834ddd92ce4f5717",
     "m_Id": 0,
-    "m_DisplayName": "Size",
+    "m_DisplayName": "PulseSize",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2290,7 +2290,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "77b8f022db3d44bcb45a16530e7dfb99",
     "m_Id": 0,
-    "m_DisplayName": "Magnification",
+    "m_DisplayName": "PulseMagnification",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2729,10 +2729,10 @@
     "m_Guid": {
         "m_GuidSerialized": "35821e1a-608c-49de-bb7e-5c0aba5d0ee4"
     },
-    "m_Name": "Size",
+    "m_Name": "PulseSize",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Size",
-    "m_DefaultReferenceName": "_Size",
+    "m_RefNameGeneratedByDisplayName": "PulseSize",
+    "m_DefaultReferenceName": "_PulseSize",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3639,7 +3639,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "ded10c963dfd44199918c890b76be67f",
     "m_Id": 0,
-    "m_DisplayName": "Speed",
+    "m_DisplayName": "PulseSpeed",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3686,10 +3686,10 @@
     "m_Guid": {
         "m_GuidSerialized": "28f14282-151e-457a-93c2-f80dba601215"
     },
-    "m_Name": "Speed",
+    "m_Name": "PulseSpeed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Speed",
-    "m_DefaultReferenceName": "_Speed",
+    "m_RefNameGeneratedByDisplayName": "PulseSpeed",
+    "m_DefaultReferenceName": "_PulseSpeed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -4262,8 +4262,8 @@
     "m_ObjectId": "fe2b7c590c644d8cb31ca48d11362201",
     "m_Title": "Time",
     "m_Position": {
-        "x": -1802.0,
-        "y": 254.0
+        "x": -1801.9998779296875,
+        "y": 253.99998474121095
     }
 }
 

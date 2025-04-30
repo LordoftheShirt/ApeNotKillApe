@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gorillaScriptableObject: {fileID: 11400000, guid: cec6786544ce5344391a7f7cef10a436, type: 2}
+  pulseAmount: 0.02
+  pulseThickness: -0.1
 --- !u!61 &5385449985278096574
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,9 +13,6 @@ public class DragBox : MonoBehaviour
 
     private Coroutine coroutine;
 
-    private bool selectCompleted = false;
-    private bool selectCancelled = false;
-
     private int clickInput;
     void Awake()
     {
@@ -31,10 +28,10 @@ public class DragBox : MonoBehaviour
         dashedBox.transform.position = position;
         spriteRenderer.size = new Vector2(0f, 0f);
         dashedBox.SetActive(true);
-        print("start coroutine!");
         coroutine = StartCoroutine(BoxStretchToPointer());
     }
 
+    // Conforms the dashed box always between dragging points.
     private IEnumerator BoxStretchToPointer()
     {
         float leftClick = InputManager.Instance.DetectLeftClickChange();

@@ -13,7 +13,7 @@ public class ShockWaveManager : MonoBehaviour
 
     private Material material;
 
-    private int waveDistanceFromCenter = Shader.PropertyToID("_WaveDistanceFromCenter");
+    private int waveDistanceFromCenter = Shader.PropertyToID("_RippleWaveDistanceFromCenter");
 
     private void Awake()
     {

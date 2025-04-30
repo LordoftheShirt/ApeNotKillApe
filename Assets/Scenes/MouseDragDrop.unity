@@ -127,6 +127,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1413251442963135721, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
+      propertyPath: pulseAmount
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413251442963135721, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
+      propertyPath: pulseThickness
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413251442963135721, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
+      propertyPath: gorillaScriptableObject
+      value: 
+      objectReference: {fileID: 11400000, guid: cec6786544ce5344391a7f7cef10a436, type: 2}
     - target: {fileID: 1479784897506199189, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_Color.b
       value: 0.35872793
@@ -849,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7378863136903087844, guid: e5516d3f7f339bc409740dd4468c109a, type: 3}
       propertyPath: m_Name
-      value: Gorilla (2)
+      value: RememberGorilla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1342,7 +1354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840950231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4616836ab52e0bb43a54857bc78dde13, type: 3}
   m_Name: 
